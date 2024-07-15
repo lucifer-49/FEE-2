@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: small;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: right;
+    padding-right: 20%;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://cuiet.codebrigade.in/images/Chitkara_University_pic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-top: 5px solid red;
+    
+
+}
+
+.header
+{ 
+    position: absolute; 
+      top: 0px; 
+      right: 10px;
+
+}
+
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.303);
+    border-radius: 0px;
+    
+}
+
+.login-form {
+    max-width: 300px;
+    margin: auto;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group select {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
