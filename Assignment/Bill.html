@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Bill.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center">Bill Calculator</h2>
+        <form id="billForm">
+            <div class="mb-3">
+                <label for="item" class="form-label">Item Name</label>
+                <input type="text" id="item" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" id="price" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Item</button>
+        </form>
+
+        <hr>
+
+        <h4>Items:</h4>
+        <ul id="itemList" class="list-group mb-3"></ul>
+
+        <h4>Total: $<span id="totalAmount">0.00</span></h4>
+
+        <button id="clearButton" class="btn btn-danger">Clear All</button>
+    </div>
+
+    <script src="Bill.js"></script>
+</body>
+</html>

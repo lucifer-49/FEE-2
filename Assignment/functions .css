@@ -1,0 +1,41 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below headings */
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #dee2e6; /* Light gray border */
+    border-radius: 0.25rem; /* Rounded corners */
+}
+
+.card-title {
+    font-weight: bold; /* Bold card titles */
+}
+
+.navbar {
+    margin-bottom: 30px; /* Space below navbar */
+}
+
+footer {
+    position: relative; /* Relative positioning for footer */
+    bottom: 0; /* Stick footer to bottom */
+    width: 100%; /* Full width */
+}
+
+.btn {
+    margin-top: 10px; /* Space above buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px; /* Ensure padding on smaller screens */
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40; 
+}
+
+h2 {
+    margin-bottom: 20px;}
+
+#itemList {
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.list-group-item {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.list-group-item button {
+    margin-left: 10px; 
+}

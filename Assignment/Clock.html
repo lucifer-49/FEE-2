@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch and Pomodoro Clock</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Clock.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center">Stopwatch</h2>
+        <div id="stopwatch" class="text-center mb-4">
+            <span id="stopwatchDisplay" class="display-4">00:00:00</span>
+        </div>
+        <button id="startStopwatch" class="btn btn-success">Start</button>
+        <button id="stopStopwatch" class="btn btn-danger" disabled>Stop</button>
+        <button id="resetStopwatch" class="btn btn-secondary">Reset</button>
+
+        <hr>
+
+        <h2 class="text-center mt-5">Pomodoro Clock</h2>
+        <div id="pomodoro" class="text-center mb-4">
+            <span id="pomodoroDisplay" class="display-4">25:00</span>
+        </div>
+        <button id="startPomodoro" class="btn btn-primary">Start Pomodoro</button>
+        <button id="stopPomodoro" class="btn btn-danger" disabled>Stop Pomodoro</button>
+        <button id="resetPomodoro" class="btn btn-secondary">Reset Pomodoro</button>
+    </div>
+
+    <script src="Clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            border: 4px solid #333;
+        }
+
+        .square {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+        .white {
+            background-color: #f0d9b5;
+        }
+
+        .black {
+            background-color: #b58863;
+        }
+
+        .piece {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chessboard"></div>
+
+    <script>
+        const board = document.getElementById('chessboard');
+
+        // Chess pieces in Unicode
+        const pieces = {
+            'r': '♜', 'n': '♞', 'b': '♝', 'q': '♛', 'k': '♚', 'p': '♟', // Black pieces
+            'R': '♖', 'N': '♘', 'B': '♗', 'Q': '♕', 'K': '♔', 'P': '♙'  // White pieces
+        };
+
+        // Chessboard starting position
+        const initialPosition = [
+            'rnbqkbnr',
+            'pppppppp',
+            '        ',
+            '        ',
+            '        ',
+            '        ',
+            'PPPPPPPP',
+            'RNBQKBNR'
+        ];
+
+        // Create the chessboard
+        for (let row = 0; row < 8; row++) {
+            for (let col = 0; col < 8; col++) {
+                const square = document.createElement('div');
+                square.classList.add('square');
+
+                // Alternating colors
+                if ((row + col) % 2 === 0) {
+                    square.classList.add('white');
+                } else {
+                    square.classList.add('black');
+                }
+
+                // Place pieces based on initial position
+                const piece = initialPosition[row][col];
+                if (piece !== ' ') {
+                    const pieceElem = document.createElement('span');
+                    pieceElem.classList.add('piece');
+                    pieceElem.textContent = pieces[piece];
+                    square.appendChild(pieceElem);
+                }
+
+                board.appendChild(square);
+            }
+        }
+    </script>
+
+</body>
+</html>

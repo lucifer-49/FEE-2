@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"> Sneaker Adda</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <section class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to Sneaker Adda</h1>
+      <p class="lead">Shop with us and get the best Sneakers!</p>
+      <button class="btn btn-primary">Shop Now</button>
+    </div>
+  </section>
+  
+  
+  <section class="container">
+    <h2 class="mb-4">Our Products</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="ASICS.jpg" alt="ASICS Black" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">ASICS Black</h5>
+            <p class="card-text">$49.99</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="Jordan.jpg" alt="Air Jordan" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Air Jordan Lows For Men</h5>
+            <p class="card-text">$99.99</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="Addidas.jpg" alt="Addidas Sports Shoe" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Athlete Wear</h5>
+            <p class="card-text">$39.99</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="container">
+    <h2 class="mb-4">Your Cart</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="ASICS.jpg" alt="ASICS Black" width="50">
+            <span>Product 1</span>
+          </td>
+          <td>$49.99</td>
+          <td><button class="btn btn-danger">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="text-right">Total: $49.99</p>
+    <button class="btn btn-primary">Checkout</button>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>@Sneaker Adda
